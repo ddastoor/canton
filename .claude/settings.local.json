@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x /home/dastoor/Projects/canton/dpm-dry-run.sh)",
+      "Bash(bash /home/dastoor/Projects/canton/dpm-dry-run.sh)"
+    ]
+  }
+}
