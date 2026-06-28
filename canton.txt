@@ -39,7 +39,7 @@ tar xzf "${TMPDIR}/${TARBALL}" -C "${extracted}" --strip-components 1
 rm -rf "${TMPDIR}"
 
 
--------------
+----------
 manual win
 
 https://get.digitalasset.com/install/latest-windows-archive.html
