@@ -96,40 +96,22 @@
         <td><a href="https://get.digitalasset.com/install/dpm-sdk/">https://get.digitalasset.com/install/dpm-sdk/</a></td>
       </tr>
       <tr>
-        <td>Create a temporary working directory</td>
-        <td><code>TMPDIR</code></td>
-        <td class="value"><code>/tmp/tmp.XXXXXXXXXX</code> <span class="muted">(random)</span></td>
-        <td>Local command: <code>mktemp -d</code></td>
-      </tr>
-      <tr>
-        <td>Download the tarball into the temp directory</td>
-        <td><code>${TMPDIR}/${TARBALL}</code></td>
-        <td class="value"><code>/tmp/tmp.XXXX/dpm-3.5.2-linux-amd64.tar.gz</code></td>
+        <td>Download the tarball</td>
+        <td><span class="muted">downloaded file</span></td>
+        <td class="value"><code>dpm-3.5.2-linux-amd64.tar.gz</code></td>
         <td><a href="https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz">https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz</a></td>
-      </tr>
-      <tr>
-        <td>Create a sub-directory to extract into</td>
-        <td><code>extracted</code></td>
-        <td class="value"><code>/tmp/tmp.XXXX/extracted</code></td>
-        <td>Local command: <code>mkdir -p</code></td>
       </tr>
       <tr>
         <td>Unpack the tarball (stripping the top-level folder)</td>
         <td><span class="muted">extracted files</span></td>
-        <td class="value"><code>/tmp/tmp.XXXX/extracted/bin/dpm</code>, &hellip;</td>
+        <td class="value"><code>bin/dpm</code>, &hellip;</td>
         <td>Local command: <code>tar xzf &hellip; --strip-components 1</code></td>
       </tr>
       <tr>
         <td>Run the downloaded binary to bootstrap/install dpm onto the system</td>
         <td><span class="muted">dpm install</span></td>
-        <td class="value"><code>${extracted}/bin/dpm bootstrap ${extracted}</code></td>
+        <td class="value"><code>dpm bootstrap</code></td>
         <td><span class="muted">Local binary just extracted</span></td>
-      </tr>
-      <tr>
-        <td>Delete the temporary directory (cleanup)</td>
-        <td><span class="muted">&mdash;</span></td>
-        <td class="value"><code>rm -rf ${TMPDIR}</code></td>
-        <td><span class="muted">Local command: <code>rm -rf</code></span></td>
       </tr>
     </tbody>
   </table>
