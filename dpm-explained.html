@@ -75,19 +75,19 @@
         <td>Detect CPU architecture and normalize it (<code>x86_64</code>&rarr;<code>amd64</code>, <code>aarch64</code>&rarr;<code>arm64</code>)</td>
         <td><code>ARCH</code></td>
         <td class="value"><code>amd64</code></td>
-        <td>Local command: <code>uname -m</code></td>
+        <td></td>
       </tr>
       <tr>
         <td>Detect the operating system and lowercase it</td>
         <td><code>OS</code></td>
         <td class="value"><code>linux</code></td>
-        <td>Local command: <code>uname</code></td>
+        <td></td>
       </tr>
       <tr>
         <td>Build the tarball filename from version, OS and arch</td>
         <td><code>TARBALL</code></td>
         <td class="value"><code>dpm-3.5.2-linux-amd64.tar.gz</code></td>
-        <td><span class="muted">Computed locally (string built from VERSION, OS, ARCH)</span></td>
+        <td></td>
       </tr>
       <tr>
         <td>Build the full download URL for that tarball</td>
@@ -105,13 +105,13 @@
         <td>Unpack the tarball (stripping the top-level folder)</td>
         <td><span class="muted">extracted files</span></td>
         <td class="value"><code>bin/dpm</code>, &hellip;</td>
-        <td>Local command: <code>tar xzf &hellip; --strip-components 1</code></td>
+        <td></td>
       </tr>
       <tr>
         <td>Run the downloaded binary to bootstrap/install dpm onto the system</td>
         <td><span class="muted">dpm install</span></td>
         <td class="value"><code>dpm bootstrap</code></td>
-        <td><span class="muted">Local binary just extracted</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
