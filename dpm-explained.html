@@ -52,8 +52,8 @@
 </style>
 </head>
 <body>
-  <h1>dpm.sh — What Each Step Does</h1>
-  <p class="sub">Installer for the Digital Asset <code>dpm</code> SDK. Example values shown are for a Linux / x86_64 machine.</p>
+  <h1>Installing dpm on Linux</h1>
+<p class="sub">Installer for the Digital Asset <code>dpm</code> SDK. Example values shown are for a Linux / x86_64 machine.</p>
 
   <table>
     <thead>
@@ -84,34 +84,30 @@
         <td></td>
       </tr>
       <tr>
-        <td>Build the tarball filename from version, OS and arch</td>
-        <td><code>TARBALL</code></td>
-        <td class="value"><code>dpm-3.5.2-linux-amd64.tar.gz</code></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Build the full download URL for that tarball</td>
-        <td><code>TARBALL_URL</code></td>
-        <td class="value"><code>https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz</code></td>
-        <td><a href="https://get.digitalasset.com/install/dpm-sdk/">https://get.digitalasset.com/install/dpm-sdk/</a></td>
-      </tr>
-      <tr>
         <td>Download the tarball</td>
         <td><span class="muted">downloaded file</span></td>
         <td class="value"><code>dpm-3.5.2-linux-amd64.tar.gz</code></td>
         <td><a href="https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz">https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz</a></td>
       </tr>
+    </tbody>
+  </table>
+
+  <h1 style="margin-top: 2.5rem;">Installing dpm on windows</h1>
+  <p class="sub">Direct archive download for Windows / x86_64.</p>
+
+  <table>
+    <thead>
       <tr>
-        <td>Unpack the tarball (stripping the top-level folder)</td>
-        <td><span class="muted">extracted files</span></td>
-        <td class="value"><code>bin/dpm</code>, &hellip;</td>
-        <td></td>
+        <th>Step</th>
+        <th>Artifact / Name</th>
+        <th>Source</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td>Run the downloaded binary to bootstrap/install dpm onto the system</td>
-        <td><span class="muted">dpm install</span></td>
-        <td class="value"><code>dpm bootstrap</code></td>
-        <td></td>
+        <td>Download the Windows archive</td>
+        <td class="value"><code>dpm-3.5.2-windows-amd64</code></td>
+        <td><a href="https://get.digitalasset.com/install/latest-windows-archive.html">https://get.digitalasset.com/install/latest-windows-archive.html</a></td>
       </tr>
     </tbody>
   </table>
