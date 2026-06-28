@@ -12,8 +12,19 @@
     margin: 0;
     padding: 2rem;
   }
-  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  h1 { font-size: 2rem; margin-bottom: 0.5rem; margin-top: 0; }
+  h2 { font-size: 1.25rem; margin-bottom: 0.25rem; margin-top: 1.75rem; }
   p.sub { color: #616e7c; margin-top: 0; }
+  .section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem 2rem;
+    max-width: 1100px;
+    margin-bottom: 2rem;
+  }
+  .section-linux { border-top: 4px solid #2a7a4b; }
+  .section-windows { border-top: 4px solid #0078d4; }
   table {
     border-collapse: collapse;
     width: 100%;
@@ -52,82 +63,89 @@
 </style>
 </head>
 <body>
-  <h1>Installing dpm on Linux</h1>
-<p class="sub">Installer for the Digital Asset <code>dpm</code> SDK. Example values shown are for a Linux / x86_64 machine.</p>
+  <div class="section section-linux">
+    <h1>Linux</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Step</th>
-        <th>Artifact / Name</th>
-        <th>Value</th>
-        <th>Source</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Fetch the latest published SDK version number</td>
-        <td><code>VERSION</code></td>
-        <td class="value"><code>3.5.2</code></td>
-        <td><a href="https://get.digitalasset.com/install/latest">https://get.digitalasset.com/install/latest</a></td>
-      </tr>
-      <tr>
-        <td>Detect CPU architecture and normalize it (<code>x86_64</code>&rarr;<code>amd64</code>, <code>aarch64</code>&rarr;<code>arm64</code>)</td>
-        <td><code>ARCH</code></td>
-        <td class="value"><code>amd64</code></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Detect the operating system and lowercase it</td>
-        <td><code>OS</code></td>
-        <td class="value"><code>linux</code></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Download the tarball</td>
-        <td><span class="muted">downloaded file</span></td>
-        <td class="value"><code>dpm-3.5.2-linux-amd64.tar.gz</code></td>
-        <td><a href="https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz">https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz</a></td>
-      </tr>
-    </tbody>
-  </table>
+    <h2>dpm (Daml Package Manager)</h2>
+    <p class="sub">Installer for the Digital Asset <code>dpm</code> SDK. Example values shown are for a Linux / x86_64 machine.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Artifact / Name</th>
+          <th>Value</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fetch the latest published SDK version number</td>
+          <td><code>VERSION</code></td>
+          <td class="value"><code>3.5.2</code></td>
+          <td><a href="https://get.digitalasset.com/install/latest">https://get.digitalasset.com/install/latest</a></td>
+        </tr>
+        <tr>
+          <td>Detect CPU architecture and normalize it (<code>x86_64</code>&rarr;<code>amd64</code>, <code>aarch64</code>&rarr;<code>arm64</code>)</td>
+          <td><code>ARCH</code></td>
+          <td class="value"><code>amd64</code></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Detect the operating system and lowercase it</td>
+          <td><code>OS</code></td>
+          <td class="value"><code>linux</code></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Download the tarball</td>
+          <td><span class="muted">downloaded file</span></td>
+          <td class="value"><code>dpm-3.5.2-linux-amd64.tar.gz</code></td>
+          <td><a href="https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz">https://get.digitalasset.com/install/dpm-sdk/dpm-3.5.2-linux-amd64.tar.gz</a></td>
+        </tr>
+      </tbody>
+    </table>
 
-  <h1 style="margin-top: 2.5rem;">Visual Studio Code extension - "Daml Studio"</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Step</th>
-        <th>Artifact / Name</th>
-        <th>Source</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Approval For Extension from VS Extension Marketplace</td>
-        <td class="value"><code>Daml Studio Extension ( DigitalAssetHoldingsLLC.daml )</code></td>
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.daml">https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.daml</a></td>
-      </tr>
-    </tbody>
-  </table>
+  </div>
 
-  <h1 style="margin-top: 2.5rem;">Installing dpm on windows</h1>
-  <p class="sub">Direct archive download for Windows / x86_64.</p>
+  <div class="section section-windows">
+    <h1>Windows</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Step</th>
-        <th>Artifact / Name</th>
-        <th>Source</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Download the Windows archive</td>
-        <td class="value"><code>dpm-3.5.2-windows-amd64</code></td>
-        <td><a href="https://get.digitalasset.com/install/latest-windows-archive.html">https://get.digitalasset.com/install/latest-windows-archive.html</a></td>
-      </tr>
-    </tbody>
-  </table>
+    <h2>dpm (Daml Package Manager)</h2>
+    <p class="sub">Direct archive download for Windows / x86_64.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Artifact / Name</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Download the Windows archive</td>
+          <td class="value"><code>dpm-3.5.2-windows-amd64</code></td>
+          <td><a href="https://get.digitalasset.com/install/latest-windows-archive.html">https://get.digitalasset.com/install/latest-windows-archive.html</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Visual Studio Code extension - "Daml Studio"</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Step</th>
+          <th>Artifact / Name</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Approval For Extension from VS Extension Marketplace</td>
+          <td class="value"><code>Daml Studio Extension ( DigitalAssetHoldingsLLC.daml )</code></td>
+          <td><a href="https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.daml">https://marketplace.visualstudio.com/items?itemName=DigitalAssetHoldingsLLC.daml</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
