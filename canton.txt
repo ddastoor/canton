@@ -73,3 +73,15 @@ Next steps:
         Access to https://console.cloud.google.com/artifacts/docker/da-images/europe/public
 
 
+VS code extenson
+----------------
+
+on the VS Code Marketplace
+    https://marketplace.visualstudio.com/vscode
+
+You can also install the extension manually from the VS Code Marketplace:
+Open VS Code
+Go to the Extensions panel (Ctrl+Shift+X / Cmd+Shift+X)
+Search for “Daml”
+Install the Digital Asset Daml extension
+After installing manually, make sure the Daml SDK is on your PATH so the extension can find the compiler.
